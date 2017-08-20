@@ -1,0 +1,144 @@
+
+database  y1----------------
+
+
+学生信息  student  √
+
+Sid  ID
+
+Sname  学生姓名
+
+Ssex  性别
+
+Snum  学号
+
+pass  MD5密码  varchar(32)
+
+password  密码
+
+
+
+管理员信息  admin  √
+
+name  管理员姓名
+
+password  密码 123 varchar(32)
+
+
+
+
+
+课程信息 course  √
+
+Cname 课程名称
+
+Cdesc 课程描述
+
+Ccredit 课程学分
+
+
+
+学生选课信息 selection  √
+
+Sname  学生姓名
+
+Cname  课程名称
+
+
+老师信息 teacher  √
+
+Tid ID
+
+Tname  老师姓名
+
+Tsex  性别
+
+Tcourse  所属课程
+
+Tnum  学工号
+
+pass  MD5密码  varchar(32)
+
+password  密码
+
+
+学生成绩 grade  √
+
+Sname  学生名称
+
+Cname  课程名称
+
+grade  课程成绩
+
+Snum  学号
+
+
+------------------------------------
+
+Course课程：
+
+1、HTML+CSS  
+
+前端最基础也是最重要的课程，包括现流行的HTML5、CSS3。
+
+2、JavaScript
+
+JavaScript是一种客户端脚本语言，为网页添加各式各样的动态功能，为用户提供更流畅美观的浏览效果。
+
+3、jQuery
+
+jQuery是一个快速、简洁的JavaScript框架，它封装了js常用的功能代码。
+
+4、Bootstrap
+
+来自Twitter，是目前最受欢迎的前端框架之一，可以开发全响应式网页。
+
+5、Vue.js
+
+一套构建用户界面的渐进式框架，通过尽可能简单的API实现响应的数据绑定和组合的视图组件。
+
+6、React
+
+一个用于构建用户界面的JavaScript库，主要用于构建UI。
+
+7、Angular.js
+
+MVC、模块化、自动化双向数据绑定、语义化标签、依赖注入等等。
+
+8、Node.js
+
+运行在服务端的JavaScript，一个新兴的前端框架，后台语言。（单线程、非阻塞IO、事件驱动）
+
+9、PHP
+
+一种创建动态交互性站点的强有力的开源的服务器端脚本语言。
+
+10、MySQL
+
+最流行的关系型数据库管理系统。
+
+11、JSON
+
+存储和交换文本信息的语法，类似XML，比XML更小、更快、更易解析。
+
+12、Ajax
+
+异步的JavaScript和XML。
+
+------------------------------------
+
+中文显示乱码解决：
+
+my.ini：
+
+[client]
+ prot=3306
+
+[mysql]
+ default-character-set=GBK
+
+[mysqld]
+ default-character-set=gbk 
+ collation-server=utf8_general_ci
+
+再重新创表即可。
